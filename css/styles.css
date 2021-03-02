@@ -4,12 +4,15 @@
   background: black;
 }
 
-div {
-  justify-content: left;
-  align-items: center;
-  /* margin: 0 auto; */
+div, iframe {
   width: 100vw;
   height: 100vh;
+  margin: 0 auto;
   padding: 0px;
   margin: 0px;
 }
+
+iframe {
+    display: block;
+    border-style: none;
+    }
