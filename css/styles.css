@@ -1,11 +1,10 @@
 * {
-
+  display: flex;
   /* margin: 0 auto; */
   background: black;
 }
 
 div {
-  display: flex;
   justify-content: center;
   align-items: center;
   /* margin: 0 auto; */
@@ -13,6 +12,4 @@ div {
   height: 100vh;
   padding: 0px;
   margin: 0px;
-
-
 }
