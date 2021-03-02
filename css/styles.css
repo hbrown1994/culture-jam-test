@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* margin: 0 auto; */
   background: black;
 }
 
@@ -9,4 +8,5 @@ iframe {
   width: 99vw;
   height: 98vh;
   padding: 0px;
+  border: 0;
 }
