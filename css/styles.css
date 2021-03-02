@@ -1,10 +1,10 @@
 * {
-  display: flex;
+  display: block;
   /* margin: 0 auto; */
   background: black;
 }
 
-div, iframe {
+div {
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
@@ -13,6 +13,5 @@ div, iframe {
 }
 
 iframe {
-    display: block;
     border-style: none;
     }
