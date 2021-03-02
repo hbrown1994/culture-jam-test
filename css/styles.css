@@ -1,13 +1,18 @@
 * {
-  display: block;
+
   /* margin: 0 auto; */
   background: black;
 }
 
 iframe{
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 auto; */
   width: 90vw;
   height: 85vh;
   padding: 0px;
   margin: 0px;
+
+
 }
