@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  background: black;
+}
+
+#container {
+  animation: fadein 60s;
+  width:100vw;
+  height:100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
