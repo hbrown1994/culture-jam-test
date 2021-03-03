@@ -57,13 +57,10 @@
     flex: 1;
 }
 
-.flex-child.one {
+.flex-child:first-child {
     margin: 0 auto;
 }
 
-.flex-child.two {
-    margin: 0 auto;
-}
 
 .links {
   text-decoration: none;
