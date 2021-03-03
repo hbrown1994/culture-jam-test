@@ -30,6 +30,14 @@
   line-height: 1.2;
 }
 
+.instructions {
+  margin-left: 30vw;
+  margin-right: auto;
+  text-align: center;
+  width: 80vw;
+  line-height: 1.2;
+}
+
 .start {
   text-transform: uppercase;
   float: center;
