@@ -10,7 +10,7 @@
 .title {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 25vh;
+  padding-top: 5vh;
   text-align: center;
 }
 
@@ -20,7 +20,7 @@
   text-align: center;
   text-transform: uppercase;
   font-family: sans-serif;
-  padding-top: 10px;
+  padding-top: 10vh;
 }
 
 .author {
@@ -29,13 +29,13 @@
   text-align: center;
   text-transform: uppercase;
   font-family: sans-serif;
-  padding-top: 10px;
+  padding-top: 10vh;
 }
 
 .start {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 70px;
+  margin-top: 15vh;
   text-align: center;
   justify-content: center;
   font-size: 24px;
@@ -43,15 +43,4 @@
 
 .start:hover{
   transform: scale(1.15);
-}
-
-.subtext{
-margin-left: auto;
-margin-right: auto;
-margin-top: 60px;
-text-align: center;
-justify-content: center;
-font-size: 18px;
-text-transform: lowercase;
-font-style: italic;
 }
