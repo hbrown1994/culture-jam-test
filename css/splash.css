@@ -61,7 +61,7 @@
     margin: 0 auto;
 }
 
-.flex-child:second-child {
+.flex-child:first-child {
     margin: 0 auto;
 }
 
