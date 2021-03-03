@@ -60,6 +60,10 @@
   transform: scale(1.15);
 }
 
+.research:hover{
+  transform: scale(1.15);
+}
+
 .flex-container {
   display: flex;
   width: 88vw;
