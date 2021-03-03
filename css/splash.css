@@ -43,6 +43,19 @@
   border: 0.5px solid white;
 }
 
+.research {
+  text-transform: uppercase;
+  float: center;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 5vh;
+  padding-top: 15px;
+  width: 130px;
+  text-align: center;
+  font-size: 24px;
+  border: 0.5px solid white;
+}
+
 .start:hover{
   transform: scale(1.15);
 }
