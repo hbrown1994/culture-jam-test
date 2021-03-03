@@ -57,11 +57,11 @@
     flex: 1;
 }
 
-.flex-child:first-child {
+.flex-child.one {
     margin: 0 auto;
 }
 
-.flex-child:first-child {
+.flex-child.two {
     margin: 0 auto;
 }
 
