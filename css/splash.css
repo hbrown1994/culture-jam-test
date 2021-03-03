@@ -10,7 +10,7 @@
 .title {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 5vh;
+  padding-top: 1vh;
   text-align: center;
 }
 
@@ -20,7 +20,8 @@
   text-align: center;
   text-transform: uppercase;
   font-family: sans-serif;
-  padding-top: 10vh;
+  padding-top: 1vh;
+  width: 80vw;
 }
 
 .author {
@@ -33,14 +34,40 @@
 }
 
 .start {
+  display: table;
+  clear: both;
+  float: center;
+  padding: 10px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15vh;
+  margin-top: 5vh;
+  width: 15vw;
   text-align: center;
-  justify-content: center;
   font-size: 24px;
+  border: 0.5px solid white;
+
 }
 
 .start:hover{
   transform: scale(1.15);
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    border: 2px solid yellow;
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60vw;
 }
