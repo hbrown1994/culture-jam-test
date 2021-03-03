@@ -61,6 +61,10 @@
     margin: 0 auto;
 }
 
+.flex-child:second-child {
+    margin: 0 auto;
+}
+
 .links {
   text-decoration: none;
   color: red;
