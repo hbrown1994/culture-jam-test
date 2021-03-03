@@ -53,6 +53,12 @@
     margin: 0 auto;
 }
 
+.links {
+  text-decoration: none;
+  color: red;
+  font-family: sans-serif;
+}
+
 img {
   display: block;
   margin-left: auto;
