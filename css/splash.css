@@ -53,17 +53,18 @@
   margin: 0 auto;
 }
 
-.flex-child {
-    flex: 1;
+.button-1 {
+
 }
 
-.flex-child:first-child {
-    margin: 0 auto;
+.button-2 {
+
 }
 
-.flex-child:second-child {
-    margin: 0 auto;
+.button-3 {
+
 }
+
 
 .links {
   text-decoration: none;
