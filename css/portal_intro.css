@@ -4,7 +4,6 @@
   text-decoration: none;
   color: white;
   font-family: sans-serif;
-
 }
 
 .title {
@@ -24,14 +23,6 @@
 
 .about {
   margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  width: 80vw;
-  line-height: 1.2;
-}
-
-.instructions {
-  margin-left: 30vw;
   margin-right: auto;
   text-align: left;
   width: 80vw;
@@ -74,8 +65,8 @@
 
 .flex-container {
   display: flex;
-  width: 88vw;
-  margin: 0 auto;
+  width: 87vw;
+  margin-left: 5.5vw;
 }
 
 .button-1 {
@@ -84,12 +75,13 @@
 }
 
 .button-2 {
-  margin-left: 17.5vw;
+  margin-left: 18vw;
 
 }
 
 .button-3 {
-  margin-left: 16vw;
+  margin-left: 18vw;
+  margin 0 auto;
 
 }
 
