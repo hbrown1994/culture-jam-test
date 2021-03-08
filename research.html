@@ -24,21 +24,88 @@
     </p>
 
     <h1 class="title">Process Documentation</h1>
-    <h2 class="title">Attempt 1: Engage Word Failure</h2>
+    <h2 class="title">1: Skill Word Failures</h2>
 
     <p class="list">
-      My initial idea for Alexa Voice Scramble was to play back scrambled vocal recordings to an Alexa. Having some peripheral experience using an Alexa, I knew that I would have to incorporate a “Wake Word” into my system. A wake word is what the Alexa listens for 24/7 in order to begin a query to its servers to listen to the user’s request to generate a response. By default, the wake word is Alexa, so I stuck with that.
+      My initial idea for Alexa Voice Scramble was to record a user's query to
+      the Alexa, and scramble the order of the words in their individual recording before
+      playing it back to the Alexa without the Alexa hearing the orginal query.
+      Having some peripheral experience using an Alexa,
+      I knew that I would have to incorporate a “Wake Word” into my system.
+      A wake word is what the Alexa listens for 24/7 in order to begin a query
+      to its servers to listen to the user’s request to generate a response.
+      By default, the wake word is Alexa, so I stuck with that.
     </p>
 
-    <br>
-
     <p class="list">
-       In the first test with the system, the user would record their question always preceded by a wake word. My Alexa Voice Scramble algorithm would then slice their recording into each individual words and store each word into a separate audio file. This way, the algorithm could retrieve and playback the wake word “Alexa” to the system. The rest of the words in the question would be played back in a random order.
+       In the first test with the system, the user would record their question
+       always preceded by a wake word. My Alexa Voice Scramble algorithm would
+       then slice their recording into each individual words and store each word
+       into a separate audio file. This way, the algorithm could retrieve and
+       playback the wake word “Alexa” to the system. The rest of the words in
+       the question would be played back in a random order. Here is an example:
     </p>
 
     <br>
 
     <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/pVnF3kTH1io" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p class="list">
+      As seen in the above video, the Alexa did not engage with the scrambled audio.
+      This is because the Alexa did not clearly hear a "Skill Word."
+      A "skill word" such as "How," "Why," "Play," "Find," "Google," "Where," etc
+      directs the Alexa to access one oof its predetermined skills. The word "play"
+      was heard for a moment, but it was cut short and the Alexa did not engage.
+      In my trials, the Alexa needs to hear one of these words in order to generate a response.
+      To fix this, I made sure to playback the first two words spoken by the user
+      before scrambling the audio, the wake word followed by the "skill word."
+    </p>
+
+    <h2 class="title">2: Playback Length and Wake Word Retrigger Issues</h2>
+
+    <p class="list">
+      Another error I found in trying to generate a response with scrambled audio
+      was when the audio sample lasted too long. I found that shorter queries
+      work best. Below is an example that contains a clear skill word and a
+      query that is too long. This example also has the error of retriggering the "wake word"
+      by playing back the recorded word "Alexa." This always resulted in a lack of response
+      from the device.
+    </p>
+
+    <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/AntkRFimGq8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p class="list">
+      I fixed this error of exluding the word "Alexa" and the skill word from the
+      bank of samples avaliable to the algorithm's "scrambling function." Here is
+      an example with these issues solved, finally resulting in a decent reply
+      from the Alexa!
+    </p>
+
+    <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/GqnzDo7f_0I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2 class="title">3: Long Term Considerations</h2>
+
+    <p class="list">
+      After getting the Alexa to actually generate a response to the scrambled
+      audio, I thought it would be interesting to use more than just the present
+      user's query as the material for the scrambled audio. I thought this
+      was a good way to further confuse the Alexa into generating responses that
+      were far off from the orginal query. I also hoped this larger range of
+      possible scrambled output would contaminate the Alexa Voice Services'
+      training data even more.
+     <br>
+      To do this, I began saving the individual recordings of every word from each entry
+      to the bank of audio that the "scrambler" could access in genertaing its response.
+      I also set the algorithm to scan through through the scrambled audio faster sometimes,
+      so that some words wouldn't play all the way through, acting as single syllables.
+      This technique generated much more diverse and unrealted responses than before.
+      See an example below:
+    </p>
+
+    <iframe class="title" width="560" height="315" src="https://www.youtube.com/embed/ccegLHvq3KI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2 class="title">4: Alexa's Output</h2>
+
 
 
   </body>
