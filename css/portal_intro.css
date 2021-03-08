@@ -14,10 +14,9 @@
 }
 
 .about {
-  margin-left: 30vw;
-  padding-right: 200px;
+  margin-left: auto;
   margin-right: auto;
-  text-align: left;
+  text-align: center;
   width: 80vw;
   line-height: 1.2;
 }
@@ -29,6 +28,7 @@
   width: 80vw;
   line-height: 1.2;
 }
+
 
 .instructions {
   margin-left: 30vw;
