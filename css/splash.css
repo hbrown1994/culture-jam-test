@@ -1,100 +1,202 @@
-* {
-  box-sizing: border-box;
-  background: black;
-  text-decoration: none;
-  color: white;
-  font-family: sans-serif;
+@media (min-width: 700px) {
+  * {
+    box-sizing: border-box;
+    background: black;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+  }
+
+  .title {
+   text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .intro {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80vw;
+    line-height: 1.2;
+  }
+
+  .about {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 80vw;
+    line-height: 1.2;
+  }
+
+  .start {
+    text-transform: uppercase;
+    float: center;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 5vh;
+    padding-top: 15px;
+    width: 130px;
+    text-align: center;
+    font-size: 24px;
+    border: 0.5px solid white;
+  }
+
+  .research {
+    text-transform: uppercase;
+    float: center;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 5vh;
+    padding-top: 15px;
+    width: 160px;
+    text-align: center;
+    font-size: 24px;
+    border: 0.5px solid white;
+  }
+
+  .start:hover{
+    transform: scale(1.15);
+  }
+
+  .research:hover{
+    transform: scale(1.15);
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    padding-left: 8vw;
+
+  }
+
+  .button-1 {
+    margin-left: 10.5vw;
+
+  }
+
+  .button-2 {
+    margin-left: 17.5vw;
+
+  }
+
+  .button-3 {
+    margin-left: 15vw;
+
+  }
+
+  .links {
+    text-decoration: none;
+    color: red;
+    font-family: sans-serif;
+  }
+
+  img {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 59vw;
+  }
 }
 
-.title {
- text-transform: uppercase;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
+@media (max-width: 700px) {
+  * {
+    box-sizing: border-box;
+    background: black;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+  }
 
-.intro {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  width: 80vw;
-  line-height: 1.2;
-}
+  .title {
+   text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 
-.about {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  width: 80vw;
-  line-height: 1.2;
-}
+  .intro {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80vw;
+    line-height: 1.2;
+  }
 
-.start {
-  text-transform: uppercase;
-  float: center;
-  padding: 10px;
-  margin: 0 auto;
-  margin-top: 5vh;
-  padding-top: 15px;
-  width: 130px;
-  text-align: center;
-  font-size: 24px;
-  border: 0.5px solid white;
-}
+  .about {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 80vw;
+    line-height: 1.2;
+  }
 
-.research {
-  text-transform: uppercase;
-  float: center;
-  padding: 10px;
-  margin: 0 auto;
-  margin-top: 5vh;
-  padding-top: 15px;
-  width: 160px;
-  text-align: center;
-  font-size: 24px;
-  border: 0.5px solid white;
-}
+  .start {
+    text-transform: uppercase;
+    float: center;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 5vh;
+    padding-top: 15px;
+    width: 130px;
+    text-align: center;
+    font-size: 24px;
+    border: 0.5px solid white;
+  }
 
-.start:hover{
-  transform: scale(1.15);
-}
+  .research {
+    text-transform: uppercase;
+    float: center;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 5vh;
+    padding-top: 15px;
+    width: 160px;
+    text-align: center;
+    font-size: 24px;
+    border: 0.5px solid white;
+  }
 
-.research:hover{
-  transform: scale(1.15);
-}
+  .start:hover{
+    transform: scale(1.15);
+  }
 
-.flex-container {
-  display: flex;
-  justify-content: center;
-  width: 80vw;
-  padding-left: 8vw;
+  .research:hover{
+    transform: scale(1.15);
+  }
 
-}
 
-.button-1 {
-  margin-left: 10.5vw;
+  .button-1 {
+    margin: 0 auto;
 
-}
+  }
 
-.button-2 {
-  margin-left: 17.5vw;
+  .button-2 {
+    margin: 0 auto;
 
-}
+  }
 
-.button-3 {
-  margin-left: 15vw;
+  .button-3 {
+    margin: 0 auto;
 
-}
+  }
 
-.links {
-  text-decoration: none;
-  color: red;
-  font-family: sans-serif;
-}
+  .links {
+    text-decoration: none;
+    color: red;
+    font-family: sans-serif;
+  }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 59vw;
+  img {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 59vw;
+  }
 }
